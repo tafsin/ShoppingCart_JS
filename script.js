@@ -110,9 +110,9 @@ products.forEach(product =>{
 
 function displayProduct(product) {
     var productsDiv = document.getElementById('pro-container');
-    var addDiv = document.createElement('div');
-    addDiv.className = 'add-Div';
-    addDiv.innerHTML=`
+    var productAddDiv = document.createElement('div');
+    productAddDiv.className = 'add-Div';
+    productAddDiv.innerHTML=`
    <div onClick="addToCart('${product.id}')">
    <img src="${product.img}">
    <p>${product.name}</p>
@@ -123,7 +123,7 @@ function displayProduct(product) {
     `
     
   
-    productsDiv.appendChild(addDiv);
+    productsDiv.appendChild(productAddDiv);
 }
 
 
@@ -150,7 +150,7 @@ function addToCart(id){
     <div>
    <img src="${imgUrl}">
 
-   <span>${name} </span><span>   BDT${price}</span>
+   <span>${name} </span><span> BDT${price}</span>
    <button onClick="removeFromCart('${price}')" id="trash-btn"><img id ="btn-img" src="https://img.icons8.com/material-rounded/24/000000/trash.png"/>
    
    </div>
