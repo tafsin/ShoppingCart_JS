@@ -128,7 +128,7 @@ function displayProduct(product) {
 
 
 function addToCart(id){
-    console.log(id);
+  
     let price=0;
     let name ='';
     let imgUrl = '';
@@ -142,7 +142,7 @@ function addToCart(id){
        }
    })
 
-   console.log(price,name,imgUrl);
+   
    var cartDiv = document.getElementById('Cart-container');
     var addDiv = document.createElement('div');
     addDiv.className = 'addDiv';
@@ -165,13 +165,13 @@ function addToCart(id){
    
 }
 function cartAddCalculation(price){
-    console.log("ami",price);
+ 
        Total = Total+price;
         updateCartCalculation(Total);
 }
 
 function removeFromCart(price){
-    console.log("ami remove",price);
+ 
        Total = Total-price;
         updateCartCalculation(Total);
 
@@ -183,7 +183,7 @@ function removeFromCart(price){
 
 
 function updateCartCalculation(Total) {
-    console.log(Total);
+  
     const total ="BDT"+Total;
     document.getElementById("subtotal").innerText=total;
     document.getElementById("total").innerText=total;
