@@ -1,1 +1,1 @@
-# ShoppingCart_JS_Task3
+# ShoppingCart_JS
